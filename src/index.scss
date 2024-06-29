@@ -1,3 +1,5 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +8,8 @@
 
 *{
     font-family: "Raleway", sans-serif;
+}
+
+.slick-slide > div{
+    margin :0px 10px !important;
 }
