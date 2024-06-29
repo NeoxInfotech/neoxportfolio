@@ -31,4 +31,11 @@ export const slidercards = [
     name: "Name",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing eLorem ipsum dolor sit amet consectetur, adipisicing elit. DistinctiLorem ipsum dolor sit amet consectetur, adipisicing eLorem ipsum dolor sit amet consectetur, adipisicing elit. Distincti",
   },
+  {
+    id: 5,
+    img: client2,
+    bg: "#95CBC8",
+    name: "Name",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing eLorem ipsum dolor sit amet consectetur, adipisicing elit. DistinctiLorem ipsum dolor sit amet consectetur, adipisicing eLorem ipsum dolor sit amet consectetur, adipisicing elit. Distincti",
+  },
 ];
