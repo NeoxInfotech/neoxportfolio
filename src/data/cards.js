@@ -9,21 +9,21 @@ export const cardData = [
     bg: "#95CBC8",
     ico: web,
     head: "Web Development",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dignissimos totam velit nemo enim aperiam culpa veniam ea mollitia provident.",
+    text: "We develop robust, scalable, and secure websites using the latest technologies to ensure optimal performance and reliability.",
   },
   {
     id: 2,
     bg: "#F5C2A8",
     ico: app,
     head: "App Development",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dignissimos totam velit nemo enim aperiam culpa veniam ea mollitia provident.",
+    text: "We create cutting-edge mobile  applications tailored to your business needs. We deliver  high-performance apps that enhance  drive business growth.",
   },
   {
     id: 3,
     bg: "#F4BC44",
     ico: design,
     head: "Design & Animation",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dignissimos totam velit nemo enim aperiam culpa veniam ea mollitia provident.",
+    text: "Our design team creates visually appealing and user-friendly websites tailored to your brand’s identity and audience.",
   },
 ];
 

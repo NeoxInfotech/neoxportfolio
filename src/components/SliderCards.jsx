@@ -6,7 +6,7 @@ const SliderCards = ({ e }) => {
       <div style={{ backgroundColor: e.bg }} className="h-[30%] p-5 w-[100%] flex items-center justify-center">
         <img src={e.img} alt="" className="h-[100px] w-[100px] rounded-full" />
       </div>
-      <h2 className='font-[800] text-[30px]'>{e.name}</h2>
+      <h2 className='font-[800] text-[20px] sm:text-[25px] text-center'>{e.name}</h2>
       <p className="text-center">
         {e.desc}
       </p>
