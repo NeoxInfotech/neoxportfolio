@@ -21,16 +21,42 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1324,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
-    <div>
-      <div className="min-h-[80vh] bg-[#F0E9D8] py-8 px-8 flex">
-        <div className="min-h-[60vh] w-[50%] flex flex-col items-left justify-center gap-12">
-          <h1 className="text-[70px] font-[700]">
+    <div className="bg-[#F0E9D8]">
+      <div className="min-h-[80vh] bg-[#F0E9D8] py-8 px-8 flex flex-col md:flex-row gap-8 md:gap-0">
+        <div className="min-h-[60vh] w-[100%] md:w-[50%] flex flex-col items-left justify-center gap-6 md:gap-12">
+          <h1 className="text-[50px] md:text-[70px] font-[700]">
             Grow Your Business <br /> With Us{" "}
           </h1>
-          <p className="text-[15px] w-[80%]">
+          <p className="text-[15px] w-[100%] md:w-[80%]">
             We Neox Infotech Help businesses to grow themselves online, Lorem
             ipsum dolor sit amet consectetur adipisicing elit. Omnis porro
             debitis sint.
@@ -39,38 +65,38 @@ const Home = () => {
             Explore Us
           </button>
         </div>
-        <div className="w-[50%] flex flex-col items-end justify-center gap-12">
-          <img src={lnd} alt="" className="min-h-[70vh] w-[80%] rounded-full" />
+        <div className="w-[100%] md:w-[50%] flex flex-col items-center md:items-end justify-center ">
+          <img src={lnd} alt="" className="min-h-[20vh] w-[80%] rounded-full" />
         </div>
       </div>
-      <div className="flex h-[90px] items-center justify-around bg-[#353535]">
+      <div className="flex min-h-[90px] items-center justify-around flex-wrap bg-[#353535]">
         <div className="flex items-center gap-3 text-white">
-          <FaReact className="text-[30px] font-[600]" />
-          <h3 className="text-[20px] font-[600]">React Js</h3>
+          <FaReact className=" md:text-[20px] lg:text-[30px] font-[600]" />
+          <h3 className=" text-[13px] md:text-[20px] font-[600]">React Js</h3>
         </div>
         <div className="flex items-center gap-3 text-white">
-          <FaNodeJs className="text-[30px] font-[600]" />
-          <h3 className="text-[20px] font-[600]">Node Js</h3>
+          <FaNodeJs className="md:text-[20px] lg:text-[30px] font-[600]" />
+          <h3 className="text-[13px] md:text-[20px] font-[600]">Node Js</h3>
         </div>
         <div className="flex items-center gap-3 text-white">
-          <DiMongodb className="text-[30px] font-[600]" />
-          <h3 className="text-[20px] font-[600]">MongoDb</h3>
+          <DiMongodb className="md:text-[20px] lg:text-[30px] font-[600]" />
+          <h3 className="text-[13px] md:text-[20px] font-[600]">MongoDb</h3>
         </div>
         <div className="flex items-center gap-3 text-white">
-          <RiNextjsLine className="text-[30px] font-[600]" />
-          <h3 className="text-[20px] font-[600]">Next Js</h3>
+          <RiNextjsLine className="md:text-[20px] lg:text-[30px]font-[600]" />
+          <h3 className="text-[13px] md:text-[20px] font-[600]">Next Js</h3>
         </div>
         <div className="flex items-center gap-3 text-white">
-          <TbBrandReactNative className="text-[30px] font-[600]" />
-          <h3 className="text-[20px] font-[600]">React Native</h3>
+          <TbBrandReactNative className="md:text-[20px] lg:text-[30px] font-[600]" />
+          <h3 className="text-[13px] md:text-[20px] font-[600]">React Native</h3>
         </div>
       </div>
       <div className="flex justify-center min-h-[70vh] py-10 bg-[#F0E9D8] flex-col gap-10">
-        <h1 className="text-[40px] font-[800] text-center">
+        <h1 className="text-[30px] md:text-[40px] font-[800] text-center">
           Manage Your Businesses With Our <br />
           Following Services
         </h1>
-        <div className="flex items-center justify-center gap-12">
+        <div className="flex items-center justify-center gap-12 flex-wrap">
           {cardData.map((card) => (
             <Card card={card} />
           ))}
@@ -80,42 +106,33 @@ const Home = () => {
         <div className="left w-[100%] md:w-[50%] h-[100%] flex items-end justify-bottom">
           <img src={aboutimg} alt="" className="h-[80%]" />
         </div>
-        <div className="left w-[100%] md:w-[50%] h-[100%] flex items-center justify-center gap-10 flex-col px-8 py-6">
+        <div className="left w-[100%] md:w-[50%] h-[100%] flex items-start justify-center gap-10 flex-col px-8 py-6">
           <h1 className="text-white font-[900] text-[60px]">Why Us</h1>
           <div className="flex flex-col gap-5">
             <div className="flex gap-5 items-center">
               <h2 className="text-[50px] font-bold"> 5+</h2>
-              <span className="font-bold">Years Experience</span>
+              <span className=" text-[30px] font-bold">Years Experience</span>
             </div>
-            <p className="text-[13px] w-[70%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              doloribus, dolor fuga consectetur doloremque at blanditiis minima
-              quisquam nulla officia rerum ex dicta! Delectus repellat quaerat
-              voluptatibus, distinctio aut sapiente!
+            <p className="text-[13px] w-[100%] md:w-[75%]">
+              Neox Infotech is a leading IT solutions provider committed to offering comprehensive technology services. With years of experience and a passion for technology, we strive to deliver top-notch solutions that cater to the unique needs of our clients. Our mission is to empower businesses by leveraging the latest technology and best practices in the industry.
             </p>
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex gap-5 items-center">
-              <h2 className="text-[50px] font-bold"> 5+</h2>
-              <span className="font-bold">Years Experience</span>
+              <h2 className="text-[50px] font-bold"> Our Mission</h2>
             </div>
-            <p className="text-[13px] w-[70%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              doloribus, dolor fuga consectetur doloremque at blanditiis minima
-              quisquam nulla officia rerum ex dicta! Delectus repellat quaerat
-              voluptatibus, distinctio aut sapiente!
+            <p className="text-[13px]  w-[100%] md:w-[75%]">
+              Our mission is simple: to empower businesses with cutting-edge web solutions that drive growth and success. We believe in the power of technology to transform businesses, and we are committed to helping you leverage the latest web trends and technologies to achieve your goals.
             </p>
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex gap-5 items-center">
-              <h2 className="text-[50px] font-bold"> 5+</h2>
-              <span className="font-bold">Years Experience</span>
+              <h2 className="text-[50px] font-bold"> What We Do</h2>
             </div>
-            <p className="text-[13px] w-[70%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              doloribus, dolor fuga consectetur doloremque at blanditiis minima
-              quisquam nulla officia rerum ex dicta! Delectus repellat quaerat
-              voluptatibus, distinctio aut sapiente!
+            <p className="text-[13px]  w-[100%] md:w-[75%]">
+              Web Design: Our design team creates visually appealing and user-friendly websites tailored to your brand’s identity and audience.
+              Web Development: We develop robust, scalable, and secure websites using the latest technologies to ensure optimal performance and reliability.
+              E-commerce Solutions: From simple online stores to complex e-commerce platforms, we provide solutions that drive sales and enhance customer experience.
             </p>
           </div>
         </div>
@@ -138,16 +155,16 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      <div className="clients flex items-center justify-center flex-col gap-10 min-h-[80vh]">
-        <h1 className="text-[40px] font-bold">What Our Clients have to say</h1>
-        <div className="min-h-[40vh] w-[90%] md:w-[75%]">
-<Slider {...settings}>
-      {
-        slidercards.map((e)=>(
-          <SliderCards e={e}/>
-        ))
-      }
-</Slider>
+      <div className="clients flex items-center justify-center flex-col gap-10 min-h-[80vh] py-6 px-8">
+        <h1 className="text-[40px] font-bold text-center">What Our Clients have to say</h1>
+        <div className="min-h-[40vh] w-[80%] md:w-[75%]">
+          <Slider {...settings}>
+            {
+              slidercards.map((e) => (
+                <SliderCards e={e} />
+              ))
+            }
+          </Slider>
         </div>
       </div>
       <div className="contact"></div>

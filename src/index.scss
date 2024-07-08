@@ -1,15 +1,16 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-*{
-    font-family: "Raleway", sans-serif;
+* {
+  font-family: "Raleway", sans-serif;
 }
 
-.slick-slide > div{
-    margin :0px 10px !important;
+.slick-slide > div {
+  margin: 0px 10px !important;
+  z-index: 1;
+}
+
+.slick-dots {
+  position: static !important;
 }
