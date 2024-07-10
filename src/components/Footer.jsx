@@ -18,7 +18,7 @@ const Footer = () => {
         <div className='w-[100%] md:w-[25%] flex flex-col gap-5'>
           <h2 className='text-[30px] font-[900]'>Contact</h2>
 
-          <span>Address - Mechea, Shantipur</span>
+          <span>Address - 1 No. Thermal Gate, Shantipur, Mecheda, Purba Medinipur</span>
           <span>Mobile - 70017735441</span>
           <span>Email - neoxinfotech@gmail.com</span>
 

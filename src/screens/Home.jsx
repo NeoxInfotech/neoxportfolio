@@ -57,9 +57,7 @@ const Home = () => {
             Grow Your Business <br /> With Us{" "}
           </h1>
           <p className="text-[15px] w-[100%] md:w-[80%]">
-            We Neox Infotech Help businesses to grow themselves online, Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Omnis porro
-            debitis sint.
+            We at Neox Infotech Help businesses to grow themselves online, Neox Provides best Web development, app development, desktop apps and digital marketing services.
           </p>
           <button className="bg-[#F4C33F] py-2 px-4 rounded-xl w-[160px] font-[600] shadow-3xl">
             Explore Us
