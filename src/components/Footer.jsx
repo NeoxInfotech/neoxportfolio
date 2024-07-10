@@ -19,7 +19,7 @@ const Footer = () => {
           <h2 className='text-[30px] font-[900]'>Contact</h2>
 
           <span>Address - 1 No. Thermal Gate, Shantipur, Mecheda, Purba Medinipur</span>
-          <span>Mobile - 70017735441</span>
+          <span>Mobile - 70017735441 / 91534227783</span>
           <span>Email - neoxinfotech@gmail.com</span>
 
         </div>
