@@ -13,7 +13,7 @@ const Footer = () => {
           <span>Instagram</span>
           <span>LinkDin</span>
           <span>Twitter</span>
-          <span>Facebook</span>
+          <a className='no-underline text-white' href='https://www.facebook.com/share/Kd7zozi6ccH2vJGQ/?mibextid=qi2Omg'>Facebook</a>
         </div>
         <div className='w-[100%] md:w-[25%] flex flex-col gap-5'>
           <h2 className='text-[30px] font-[900]'>Contact</h2>
