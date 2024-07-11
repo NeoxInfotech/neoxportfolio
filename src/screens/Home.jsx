@@ -126,7 +126,7 @@ const Home = () => {
               <h2 className="text-[50px] font-bold"> 5+</h2>
               <span className=" text-[30px] font-bold">Years Experience</span>
             </div>
-            <p className="text-[13px] w-[100%] md:w-[75%]">
+            <p className="text-[15px] w-[100%] md:w-[75%]">
               Neox Infotech is a leading IT solutions provider committed to offering comprehensive technology services. With years of experience and a passion for technology, we strive to deliver top-notch solutions that cater to the unique needs of our clients. Our mission is to empower businesses by leveraging the latest technology and best practices in the industry.
             </p>
           </div>
@@ -134,7 +134,7 @@ const Home = () => {
             <div className="flex gap-5 items-center">
               <h2 className="text-[50px] font-bold"> Our Mission</h2>
             </div>
-            <p className="text-[13px]  w-[100%] md:w-[75%]">
+            <p className="text-[15px]  w-[100%] md:w-[75%]">
               Our mission is simple: to empower businesses with cutting-edge web solutions that drive growth and success. We believe in the power of technology to transform businesses, and we are committed to helping you leverage the latest web trends and technologies to achieve your goals.
             </p>
           </div>
@@ -142,7 +142,7 @@ const Home = () => {
             <div className="flex gap-5 items-center">
               <h2 className="text-[50px] font-bold"> What We Do</h2>
             </div>
-            <p className="text-[13px]  w-[100%] md:w-[75%]">
+            <p className="text-[15px]  w-[100%] md:w-[75%]">
               Web Design: Our design team creates visually appealing and user-friendly websites tailored to your brand’s identity and audience.
               Web Development: We develop robust, scalable, and secure websites using the latest technologies to ensure optimal performance and reliability.
               E-commerce Solutions: From simple online stores to complex e-commerce platforms, we provide solutions that drive sales and enhance customer experience.
