@@ -16,7 +16,10 @@ const PriceComponent = ({ price }) => {
                 </ul>
 
             </div>
-            {/* <h1 className='text-left font-bold text-[22px]'>{price?.price}</h1> */}
+            <div className='px-6 py-3 bg-[#353535] rounded-xl'>
+                <span className='text-white text-[14px]'>Starting-</span>
+                <h1 className='text-left font-bold text-[16px] text-white'>{price?.price}</h1>
+            </div>
         </div>
     )
 }

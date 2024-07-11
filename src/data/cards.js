@@ -72,7 +72,7 @@ export const pricingcards = [
     contents: ["Content Management", "Admin Portal & History", "SEO support", "Play Store Support",
       "Fast Loading", "Notifications and intro", "100% Support", "5 or more email accounts", "Theme Choice",
     ],
-    price: "Rs 40000 - Rs 45000 (Depending on the app)"
+    price: "Rs 40000 - Rs 45000"
   },
 
 ]
