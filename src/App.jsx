@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Contact from './screens/Contact'
 import Pricing from './screens/Pricing'
 import About from './screens/About'
+import ScrollToTop from './components/ScrollToTop'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
       </Routes>
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }

@@ -6,7 +6,7 @@ const PriceComponent = ({ price }) => {
             <h1 className='text-[30px] font-bold'>{price?.head}</h1>
             <div className='w-[95%] h-[1px] bg-black'></div>
             <div className='min-h-[400px] flex justify-center items-center'>
-                <ul className='flex flex-col gap-4 list-disc'>
+                <ul className='flex flex-col gap-4 list-decimal font-bold items-start'>
                     {
                         price?.contents?.map((c) => (
                             <li>{c}</li>

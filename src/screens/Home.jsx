@@ -11,11 +11,17 @@ import aboutimg from "../assets/aboutimg.png";
 import client from "../assets/client.jpg"
 import SliderCards from "../components/SliderCards";
 import Slider from "react-slick";
+import neoxlogo from "../assets/neox-full.png"
 import { slidercards } from "../data/sliderCards";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
+  const [types] = useTypewriter({
+    words: ["Web Development Services", "Andriod Development Services", "Desktop Applications", "Graphic Design", "2D Animation"],
+    loop: {}
+  })
   const settings = {
     dots: true,
     infinite: true,
@@ -52,9 +58,18 @@ const Home = () => {
   return (
     <div className="bg-[#F0E9D8]">
       <div className="min-h-[80vh] bg-[#F0E9D8] py-8 px-8 flex flex-col md:flex-row gap-8 md:gap-0">
-        <div className="min-h-[60vh] w-[100%] md:w-[50%] flex flex-col items-left justify-center gap-6 md:gap-12">
-          <h1 className="text-[50px] md:text-[70px] font-[700]">
-            Grow Your Business <br /> With Us{" "}
+        <div className="min-h-[60vh] w-[100%] md:w-[50%] flex flex-col items-left justify-center gap-6 md:gap-8">
+          {/* <img src={neoxlogo} alt="" className="h-[90px] w-[90px]" /> */}
+          <h1 className="text-[35px] md:text-[60px] lg:text-[70px] leading-11 font-[700] text-center md:text-start">
+            Grow Your Business With Us{" "}
+          </h1>
+          <h1 className="text-[30px] flex flex-col items-center lg:flex-row md:text-[40px] leading-11 font-[700]">
+            We Provide -
+            <span className="text-[15px] sm:text-[30px]" style={{ fontWeight: "bold", color: "#315781" }}>
+              {types}
+              <span><Cursor /></span>
+            </span>
+
           </h1>
           <p className="text-[15px] w-[100%] md:w-[80%]">
             We at Neox Infotech Help businesses to grow themselves online, Neox Provides best Web development, app development, desktop apps and digital marketing services.
