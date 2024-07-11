@@ -1,16 +1,19 @@
 import React from 'react'
 import neoxlogo from "../assets/neox-full.png"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { RxCross1 } from "react-icons/rx";
 
+
+
 const Menu = ({ setMenu }) => {
+    const navigateTo = useNavigate()
     return (
         <div className='header bg-[#F0E9D8] min-h-[90px] px-8 flex flex-col z-[999]  items-center justify-between sticky top-0 py-6 gap-12 shadow-lg' >
             <div className='text-right w-[100%]'>
                 <RxCross1 className='text-[20px] font-[800]' onClick={() => setMenu(false)} />
             </div>
 
-            <img src={neoxlogo} alt="" className='h-[90px]' />
+            <img src={neoxlogo} alt="" className='h-[90px]' onClick={() => navigateTo("/")} />
             <div className="flex flex-col  items-center gap-6">
                 <Link to={"/"} className='px-4 py-2 hover:border-black border-[1px] border-solid rounded-md font-semibold' onClick={() => setMenu(false)}>Home</Link>
                 <Link to={"/about"} className='px-4 py-2 hover:border-black border-[1px] border-solid rounded-md font-semibold' onClick={() => setMenu(false)}>About</Link>

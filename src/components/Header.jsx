@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import neoxlogo from "../assets/neox-full.png"
 import { IoIosMenu } from "react-icons/io";
 import Menu from './Menu';
@@ -9,17 +9,18 @@ import Menu from './Menu';
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
+  const navigateTo = useNavigate()
   return (
     <>
       {
         menu ? <Menu setMenu={setMenu} /> : <div className='header z-[999] bg-[#F0E9D8] min-h-[90px] px-8 flex md:hidden  items-center justify-between sticky top-0 py-6 shadow-lg'>
-          <img src={neoxlogo} alt="" className='h-[80px] sm:h-[60px]' />
+          <img src={neoxlogo} alt="" className='h-[80px] sm:h-[60px]' onClick={() => navigateTo("/")} />
           <IoIosMenu className='text-[40px]' onClick={() => setMenu(!menu)} />
         </div>
       }
 
       <div className='header bg-[#F0E9D8] min-h-[90px] px-8 z-[999] hidden md:flex flex-col md:flex-row items-center justify-between sticky top-0 py-6 shadow-lg' >
-        <img src={neoxlogo} alt="" className='h-[80px]' />
+        <img src={neoxlogo} alt="" className='h-[80px]' onClick={() => navigateTo("/")} />
         <div className="flex  items-center gap-6">
           <Link to={"/"} className='px-4 py-2 hover:border-black border-[1px] border-solid rounded-md font-semibold' onClick={() => setMenu(false)}>Home</Link>
           <Link to={"/about"} className='px-4 py-2 hover:border-black border-[1px] border-solid rounded-md font-semibold' onClick={() => setMenu(false)}>About</Link>
