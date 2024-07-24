@@ -1,7 +1,7 @@
 import React from 'react'
 import PriceComponent from '../components/PriceComponent'
 import { pricingcards } from '../data/cards'
-import neox from "../assets/neox.png"
+import neox from "../assets/neox-full.png"
 import { Link } from 'react-router-dom'
 
 const Pricing = () => {

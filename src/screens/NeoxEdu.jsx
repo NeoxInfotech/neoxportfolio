@@ -26,10 +26,14 @@ const NeoxEdu = () => {
 
                 <div className="coming min-h-[50vh]  flex flex-col gap-4 items-center justify-center">
                     <h2 className='text-[30px] md:text-[45px] font-[800]'>Coming Soon .... </h2>
-                    <span className='text-[15px] md:text-[20px] font-[600]'>For Advance enqury Contact Us</span>
+                    <span className='text-[15px] md:text-[20px] font-[600]'>For Advance enquiry Contact Us</span>
                     <a href='https://wa.me/7001735441' className=' py-3 px-9 bg-[#353535] text-white font-[500] rounded-3xl flex items-center gap-3'>
                         <img src={wp} alt="" className='h-[20px] filter invert' />
-                        Contact Now
+                        7001735441
+                    </a>
+                    <a href='https://wa.me/7980944720' className=' py-3 px-9 bg-[#353535] text-white font-[500] rounded-3xl flex items-center gap-3'>
+                        <img src={wp} alt="" className='h-[20px] filter invert' />
+                        7980944720
                     </a>
                 </div>
             </div>
