@@ -65,7 +65,7 @@ const Home = () => {
           </h1>
           <h1 className="text-[30px] flex flex-col items-center lg:flex-row md:text-[40px] leading-11 font-[700]">
             We Provide -
-            <span className="text-[15px] sm:text-[30px]" style={{ fontWeight: "bold", color: "#315781" }}>
+            <span className="text-[15px] md:text-[20px] lg:text-[30px]" style={{ fontWeight: "bold", color: "#315781" }}>
               {types}
               <span><Cursor /></span>
             </span>

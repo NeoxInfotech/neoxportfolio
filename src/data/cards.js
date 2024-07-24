@@ -2,6 +2,18 @@ import web from "../assets/web.png"
 import app from "../assets/app.png"
 import design from "../assets/design.png"
 
+// Neox edu
+import react from "../assets/neox-edu/neox_react.png"
+import js from "../assets/neox-edu/neox_js.png"
+import figma from "../assets/neox-edu/neox_figma.png"
+import git from "../assets/neox-edu/neox-git.png"
+import node from "../assets/neox-edu/neox_node.png"
+import mongo from "../assets/neox-edu/neox_mongo.png"
+import mysql from "../assets/neox-edu/neox_mysql.png"
+import exp from "../assets/neox-edu/neox_exp.png"
+import next from "../assets/neox-edu/neox_next.png"
+import wordpress from "../assets/neox-edu/neox_wordpress.png"
+
 
 export const cardData = [
   {
@@ -75,4 +87,72 @@ export const pricingcards = [
     price: "Rs 40000 - Rs 45000"
   },
 
+]
+
+
+
+export const eduCards = [
+  {
+    id: 1,
+    ico: figma,
+    head: "Figma",
+    bg: "#95CBC8",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 2,
+    ico: js,
+    bg: "#F5C2A8",
+    head: "Advanced Javascript",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 3,
+    ico: react,
+    head: "React Js",
+    bg: "#F4BC44",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 4,
+    ico: exp,
+    bg: "#95CBC8",
+    head: "Express JS",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 5,
+    ico: node,
+    bg: "#F5C2A8",
+    head: "Node JS",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 6,
+    ico: mongo,
+    head: "MongoDB",
+    bg: "#F4BC44",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 7,
+    ico: mysql,
+    bg: "#95CBC8",
+    head: "MySql",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 8,
+    ico: git,
+    bg: "#F5C2A8",
+    head: "Git-Hub",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  },
+  {
+    id: 9,
+    ico: next,
+    head: "Next Js",
+    bg: "#F4BC44",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque qui a perspiciatis quae placeat at rem minus unde perferendis.",
+  }
 ]
